@@ -3,33 +3,14 @@ h1 {
     text-align: center;
     padding: 5%;
     font-size: 50px;
+    background-color: blue;
+    color: white;
 }
-
-
-/* form {
-    font-size: 25px;
-    font-weight: 600;
-}
-
-input {
-    padding: 7%;
-    width: 700px;
-    height: 150px;
-}
-
-.btn-primary {
-    padding: 2%;
-    width: 150px;
-} */
-
-
-/* #input2 {
-    font-size: 20px;
-    font-weight: 400;
-} */
 
 body {
     /* background-color: gray; */
     height: 100vh;
-    /* background-image: url("https://bit.ly/2DyqMK2"); */
+    background-image: url("https://bit.ly/34ML6na");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
