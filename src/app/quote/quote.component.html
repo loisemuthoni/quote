@@ -1,39 +1,21 @@
-<header>
-    <div class="container">
-        <h1>LaQuotes</h1>
-        <hr>
-        <ul>
-            <div>
-                <div *ngFor='let quote of quote let i = index'>
-                    <li>{{quote.name}} due on {{quote.completeDate|date|uppercase}}</li>
-                    <br>
-                    <button (click)='toggleDetails(i)'>Toggle Details</button>
-                    <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete)='deleteQuote ($event,i)'></app-quote-detail>
+<div class="container">
+    <h1>LAQUOTES</h1>
+    <hr>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div *ngFor='let quote of quote;let i = index'>
+                <div>
+                    <h4 id={{i}} appStrikethrough>{{quote.name}} due on {{quote.completeDate|date|uppercase}}</h4>
+                    <button (click)='toggleDetails(i)' class="btn btn-primary">Toggle Details</button>
+                </div>
+
+                <div *ngIf='quote.showDescription'>
+                    <app-quote-detail [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-detail>
                 </div>
             </div>
-        </ul>
-        <p *ngIf='quote.length > 5'>You have too many quote</p>
+        </div>
     </div>
-</header>
 
-<body>
-    <!-- <div class="container">
-        <form>
-            <div class="form-group">
-                <label for="formGroupExampleInput2">Quote</label>
-                <input type="text" class="form-control" id="input2" placeholder="The grass is greener where you water it">
-                <button _ngcontent-qdf-c1="" class="btn btn-primary">EXPLORE</button>
-            </div>
-            <div class="form-group">
-                <label for="formGroupExampleInput2">Quote</label>
-                <input type="text" class="form-control" id="input2" placeholder="Wherever life plants you, bloom with grace">
-                <button _ngcontent-qdf-c1="" class="btn btn-primary">EXPLORE</button>
-            </div>
-            <div class="form-group">
-                <label for="formGroupExampleInput2">Quote</label>
-                <input type="text" class="form-control" id="input2" placeholder="Learn from yesterday">
-                <button _ngcontent-qdf-c1="" class="btn btn-primary">EXPLORE</button>
-            </div>
-        </form>
-    </div>
-</body> -->
+    <p *ngIf='quote.length > 5'>You have too many quote</p>
+</div>
