@@ -4,12 +4,12 @@
         <hr>
         <ul>
             <div>
-                <li *ngFor='let quote of quote let i = index'>
-                    {{quote.name}}
+                <div *ngFor='let quote of quote let i = index'>
+                    <li>{{quote.name}} due on {{quote.completeDate|date|uppercase}}</li>
                     <br>
                     <button (click)='toggleDetails(i)'>Toggle Details</button>
-                    <app-quote-detail *ngIf='quote.showDescription' [quote]='goal' (isComplete)='completeGoal($event,i)'></app-quote-detail>
-                </li>
+                    <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete)='completeQuote($event,i)'></app-quote-detail>
+                </div>
             </div>
         </ul>
         <p *ngIf='quote.length > 5'>You have too many quote</p>
