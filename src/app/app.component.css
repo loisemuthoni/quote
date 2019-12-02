@@ -4,3 +4,8 @@ h1 {
     padding: 5%;
     font-size: 50px;
 }
+
+form {
+    font-size: 25px;
+    font-weight: 600;
+}
