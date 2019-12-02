@@ -8,7 +8,7 @@
                     <li>{{quote.name}} due on {{quote.completeDate|date|uppercase}}</li>
                     <br>
                     <button (click)='toggleDetails(i)'>Toggle Details</button>
-                    <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete)='completeQuote($event,i)'></app-quote-detail>
+                    <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete)='deleteQuote ($event,i)'></app-quote-detail>
                 </div>
             </div>
         </ul>
