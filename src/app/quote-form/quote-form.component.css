@@ -1,0 +1,12 @@
+h2 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+label {
+    padding: 2%;
+    font-size: 30px;
+    font-family: inherit;
+    font-weight: bold;
+    text-align: center;
+}
