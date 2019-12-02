@@ -1,0 +1,27 @@
+h1 {
+    font-weight: bold;
+    text-align: center;
+    padding: 5%;
+    font-size: 50px;
+}
+
+form {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+input {
+    padding: 7%;
+    width: 700px;
+    height: 150px;
+}
+
+.btn-primary {
+    padding: 2%;
+    width: 150px;
+}
+
+#input2 {
+    font-size: 20px;
+    font-weight: 400;
+}
