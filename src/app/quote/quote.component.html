@@ -1,11 +1,23 @@
 <header>
     <div class="container">
         <h1>LaQuotes</h1>
+        <hr>
+        <ul>
+            <div>
+                <li *ngFor='let quote of quote let i = index'>
+                    {{quote.name}}
+                    <br>
+                    <button (click)='toggleDetails(i)'>Toggle Details</button>
+                    <app-quote-detail *ngIf='quote.showDescription' [quote]='quote'></app-quote-detail>
+                </li>
+            </div>
+        </ul>
+        <p *ngIf='quote.length > 5'>You have too many quote</p>
     </div>
 </header>
 
 <body>
-    <div class="container">
+    <!-- <div class="container">
         <form>
             <div class="form-group">
                 <label for="formGroupExampleInput2">Quote</label>
@@ -24,4 +36,4 @@
             </div>
         </form>
     </div>
-</body>
+</body> -->
