@@ -17,11 +17,11 @@ export class QuoteComponent implements OnInit {
   }
   
   quote: Quote[] = [
-    new Quote(1, 'The way to get started is to quit talking and begin doing.', '',new Date(2020,3,14)),
-    new Quote(2,'If life were predictable it would cease to be life, and be without flavor','',new Date(2020,3,14)),
+    new Quote(1, 'The way to get started is to quit talking and begin doing.', '',new Date(2019,1,1)),
+    new Quote(2,'If life were predictable it would cease to be life, and be without flavor','',new Date(2019,4,14)),
     new Quote(3,'Whoever is happy will make others happy too.','',new Date(2020,3,14)),
-    new Quote(4,'You will face many defeats in life, but never let yourself be defeated.','',new Date(2020,3,14)),
-    new Quote(5,'Never let the fear of striking out keep you from playing the game.','',new Date(2020,3,14)),
+    new Quote(4,'You will face many defeats in life, but never let yourself be defeated.','',new Date(2018,5,24)),
+    new Quote(5,'Never let the fear of striking out keep you from playing the game.','',new Date(2017,3,4)),
   ];
   toggleDetails(index){
     this.quote[index].showDescription = !this.quote[index].showDescription;
