@@ -8,7 +8,11 @@ Loise Muthoni
 - This website can basically upload quotes and the user can like and dislike the quote or upvote or downvote.
 
 ## Setup Instructions
-
+- Clone this repo through git clone
+- Extract the file into your preferred location
+- Navigate to the index.html through the terminal.
+- Open the html file with your favourite browser.
+- Have internet connection
 
 ## Technology Used
 - HTML
@@ -16,10 +20,12 @@ Loise Muthoni
 - ANGULAR
 
 ## BDD
-- 
+- Read the quote
+- Like or Dislike and can even delete it
+- You can add a quote and it will be displayed at what time you wrote it.
 
 ## Project's Live Link
-- 
+- https://loisemuthoni.github.io/quote/
 
 ## Contact Information
 - Email: loisemburu01@gmail.com
