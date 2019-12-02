@@ -14,3 +14,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+h6 {
+    font-size: 25px;
+    padding: 3%;
+    font-family: 'Francois One', sans-serif;
+}
