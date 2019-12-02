@@ -9,3 +9,9 @@ form {
     font-size: 25px;
     font-weight: 600;
 }
+
+input {
+    padding: 7%;
+    width: 500px;
+    height: 150px;
+}
